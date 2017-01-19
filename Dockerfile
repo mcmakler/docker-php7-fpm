@@ -7,7 +7,7 @@ RUN apt-get update \
 && apt-get install -y imagemagick libmagickwand-dev libmagickcore-dev \
 && apt-get install -y libmcrypt-dev libcurl4-gnutls-dev libicu-dev libxslt-dev libssl-dev \
 \
-&& docker-php-ext-install -j$(nproc) iconv mcrypt pdo_mysql gd zip curl bcmath opcache mbstring \
+&& docker-php-ext-install -j$(nproc) iconv mcrypt mysqli pdo_mysql gd zip curl bcmath opcache mbstring \
 && docker-php-ext-install -j$(nproc) curl json intl session xmlrpc xsl \
 && docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-dir=/usr/include/ \
 && docker-php-ext-install -j$(nproc) gd \
