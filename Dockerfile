@@ -1,7 +1,7 @@
 # See https://github.com/docker-library/php/blob/173945670390f6595da8f93ae46b442167ff05be/5.6/fpm/Dockerfile
 FROM php:7-fpm
 
-MAINTAINER Oskar Hasinski <oskar@hasinski.de>
+MAINTAINER McMakelr <admin@mcmakler.de>
 
 RUN apt-get update \
 && apt-get install -y imagemagick libmagickwand-dev libmagickcore-dev \
